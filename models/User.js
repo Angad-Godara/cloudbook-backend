@@ -1,6 +1,9 @@
 const mongoose = require('mongoose')
 const { Schema } = require('mongoose')
 
+var cors = require('cors')
+app.use(cors())
+
 const UserSchema = new Schema({
     name: {
         type: String,

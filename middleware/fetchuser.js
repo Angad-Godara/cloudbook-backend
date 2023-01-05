@@ -1,6 +1,9 @@
 var jwt = require('jsonwebtoken');
 const JWT_SECRET = "thisisa$secret"
 
+var cors = require('cors')
+app.use(cors())
+
 fetchuser = (req, res, next) => {
     // Get the user(for checking the id) from the jwt token and add id to req object
     const token = req.header('auth-token')
