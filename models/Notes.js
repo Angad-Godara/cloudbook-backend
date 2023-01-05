@@ -1,9 +1,6 @@
 const mongoose = require('mongoose')
 const { Schema } = require('mongoose')
 
-var cors = require('cors')
-app.use(cors())
-
 const NotesSchema = new Schema({
     user: {
         type: mongoose.Schema.Types.ObjectId,

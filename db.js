@@ -1,7 +1,5 @@
 const mongoose = require('mongoose')
 const passcode = require('./local')
-var cors = require('cors')
-app.use(cors())
 
 const mongoURI = `mongodb+srv://lostinpresent:${passcode}@cluster0.a5ibf.mongodb.net/?retryWrites=true&w=majority`;
 
