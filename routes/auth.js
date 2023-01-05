@@ -8,6 +8,9 @@ const fetchuser = require('../middleware/fetchuser')
 
 const JWT_SECRET = "thisisa$secret"
 
+var cors = require('cors')
+router.use(cors())
+
 //Route 1: Adding a new user to the db using POST: /api/auth/createuser
 router.post('/createuser', [
 

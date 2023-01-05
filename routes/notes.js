@@ -4,6 +4,9 @@ const router = express.Router();
 const fetchuser = require('../middleware/fetchuser');
 const { body, validationResult } = require('express-validator');
 
+var cors = require('cors')
+router.use(cors())
+
 // Route 1: Get all the notes of a user using: GET "/api/auth/fetchallnotes" . Login required
 router.get('/fetchallnotes', fetchuser, async (req, res) => {
     try {
